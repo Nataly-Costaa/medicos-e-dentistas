@@ -86,3 +86,124 @@ footer {
         font-weight: 200;
     }
 }
+
+@media (max-width: 320px) {
+  footer {
+    height: auto;
+    padding: 3vh 0;
+
+    .boxFooter {
+      flex-direction: column;
+      height: auto;
+      gap: 2rem;
+      text-align: center;
+
+      .logo,
+      .contatos,
+      .redes {
+        width: 90%;
+        height: auto;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .logo {
+        figure {
+          width: 100%;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        .textLogo {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+
+      .contatos {
+        figure {
+          width: 100%;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+      }
+
+      .redes {
+        .boxRedes {
+          width: 100%;
+          height: auto;
+          gap: 0.6rem;
+          align-items: center;
+        }
+      }
+    }
+
+    .copy {
+      height: auto;
+      padding: 2vh 1rem;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 440px) {
+  footer {
+    height: auto;
+    padding: 4vh 0;
+
+    .boxFooter {
+      flex-direction: column;
+      height: auto;
+      gap: 2.5rem;
+      text-align: center;
+
+      .logo,
+      .contatos,
+      .redes {
+        width: 85%;
+        height: auto;
+        gap: 1.2rem;
+        align-items: center;
+      }
+
+      .logo {
+        figure {
+          width: 100%;
+          justify-content: center;
+          gap: 0.6rem;
+        }
+
+        .textLogo {
+          width: 100%;
+          font-size: 0.95rem;
+        }
+      }
+
+      .contatos {
+        figure {
+          width: 100%;
+          justify-content: center;
+          gap: 0.6rem;
+        }
+      }
+
+      .redes {
+        .boxRedes {
+          width: 100%;
+          height: auto;
+          gap: 0.8rem;
+          align-items: center;
+        }
+      }
+    }
+
+    .copy {
+      height: auto;
+      padding: 2.5vh 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  }
+}
+
