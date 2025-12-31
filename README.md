@@ -1,16 +1,47 @@
-# React + Vite
+# 🩺 Médicos & Dentistas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto **Médicos & Dentistas** é uma aplicação web desenvolvida em **React** com o objetivo de divulgar e apoiar um projeto social que oferece **atendimento médico e odontológico gratuito** para comunidades que mais precisam.
 
-Currently, two official plugins are available:
+A aplicação apresenta informações institucionais, impacto social e um formulário de **inscrição para voluntários**, tudo com uma interface moderna, acessível e totalmente responsiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Visão Geral
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Landing page institucional  
+- Página de inscrição para voluntários  
+- Navegação SPA com React Router  
+- Layout responsivo para desktop, tablet e mobile  
+- Estilização modular com **SCSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tecnologias Utilizadas
+
+- React
+- React Router DOM
+- SCSS (CSS Modules)
+- JavaScript (ES6+)
+- HTML5
+
+---
+
+## ▶️ Como Executar o Projeto
+
+``` bash
+# Clone o repositório
+git clone https://github.com/Nataly-Costaa/medicos-e-dentistas.git
+
+# Acesse a pasta do projeto
+cd medicos-e-dentistas
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
+```
+
+## 📱 Responsividade
+
+O projeto foi desenvolvido com foco em mobile-first e se adapta perfeitamente a diferentes tamanhos de tela, garantindo uma boa experiência de uso em qualquer dispositivo.
