@@ -1,0 +1,249 @@
+.header {
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    padding-left: 2rem;
+
+    .boxLogo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 22%;
+
+        .logoTitle {
+            font-size: 1.1rem;
+        }   
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        height: 9vh;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 9vh;
+            list-style: none;
+
+            .inscricao {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 7vh;
+                width: 50%;
+                border-radius: 9px;
+                background-color: var(--primary-color);
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--font-color);
+                    width: 100%;
+                    height: 100%;
+                    font-weight: 300;
+                }
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                    transition: .3s ease-in-out;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--secondary-color);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @media (max-width: 320px) {
+        padding: 0;
+
+        .boxLogo {
+            width: 65%;
+
+            .logoTitle {
+                font-size: 0.9rem;
+            }
+
+            img {
+                width: 35px;
+            }
+        }
+
+        /* Botão hamburguer */
+        .hamburger {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--secondary-color);
+            width: 20%;
+        }
+
+        .nav {
+            position: absolute;
+            top: 12vh;
+            right: 0;
+            width: 100%;
+            background-color: white;
+            display: none;
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+
+        .nav.active {
+            display: flex;
+        }
+
+        .nav ul {
+            flex-direction: column;
+            gap: 1rem;
+            height: auto;
+        }
+
+        .nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inscricao {
+            width: 80%;
+            height: 6vh;
+        }
+    }
+
+    @media (min-width: 321px) and (max-width: 440px) {
+        padding: 0;
+
+        .boxLogo {
+            width: 65%;
+
+            img {
+                width: 40px;
+            }
+
+            .logoTitle {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        /* Botão hamburguer */
+        .hamburger {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            cursor: pointer;
+            color: var(--secondary-color);
+            width: 20%;
+        }
+
+        .nav {
+            position: absolute;
+            top: 13vh;
+            right: 0;
+            width: 100%;
+            background-color: #fff;
+            display: none;
+            flex-direction: column;
+            padding: 1.5rem 0;
+            z-index: 10;
+        }
+
+        .nav.active {
+            display: flex;
+        }
+
+        .nav ul {
+            flex-direction: column;
+            gap: 1.2rem;
+            height: auto;
+        }
+
+        .nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inscricao {
+            width: 75%;
+            height: 6.5vh;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 884px) {
+        padding: 0;
+
+        .boxLogo {
+            width: 50%;
+
+            img {
+                width: 45px;
+            }
+
+            .logoTitle {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Botão hamburguer */
+        .hamburger {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: var(--secondary-color);
+            width: 15%;
+        }
+
+        .nav {
+            position: absolute;
+            top: 14vh;
+            right: 0;
+            width: 100%;
+            background-color: #fff;
+            display: none;
+            flex-direction: column;
+            padding: 1.5rem 0;
+            z-index: 10;
+        }
+
+        .nav.active {
+            display: flex;
+        }
+
+        .nav ul {
+            flex-direction: column;
+            gap: 1.5rem;
+            height: auto;
+        }
+
+        .nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inscricao {
+            width: 60%;
+            height: 7vh;
+        }
+    }
+}
